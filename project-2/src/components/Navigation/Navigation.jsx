@@ -1,8 +1,10 @@
-import mainLogo from "../assets/logo.png";
-
+import mainLogo from "/logo.png";
+import styles from "./Navigation.module.css";
 function Navigation() {
+
+  console.log(styles);
   return (
-    <nav>
+    <nav className={`${styles.navigation} container`}>
       <div className="logo">
         <img src={mainLogo} alt="do some coding logo" />
       </div>
