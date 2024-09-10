@@ -14,3 +14,12 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.main_container {
+    display: flex;
+    /* height: 100vh;  */
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 50px;
+}
