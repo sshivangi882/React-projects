@@ -1,13 +1,15 @@
+import styled from "styled-components";
+import React from "react";
+import StartGame from "./components/StartGame";
 
-import './App.css'
+
 
 function App() {
-  
-
   return (
-   <div></div>
-   
-  )
+   <>
+     <StartGame/>
+   </>
+  );
 }
 
-export default App
+export default App;
