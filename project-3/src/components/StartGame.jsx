@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function StartGame() {
+function StartGame({toggle}) {
   return (
     <Container>
         <div>
@@ -9,7 +9,9 @@ function StartGame() {
         </div>
         <div className='content'>
             <h1>DICE GAME</h1>
-            <Button>Play Now</Button>
+            <Button
+            onClick={toggle}
+            >Play Now</Button>
         </div>
     </Container>
   )
@@ -37,9 +39,9 @@ background-color: black;
 color: white;
 justify-content: center;
 padding: 10px 30px;
-min-width: 220px
+min-width: 220px;
 border: none;
-poniter: cursor;
+pointer-events: cursor;
 border-radius: 5px;
 font-size: 16px;
 transition: 0.3s ease;
