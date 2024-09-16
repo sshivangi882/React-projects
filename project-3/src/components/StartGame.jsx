@@ -44,6 +44,7 @@ border-radius: 5px;
 font-size: 16px;
 transition: 0.3s ease;
 
+
 &:hover{
     background-color: #383838;
     color: white;
