@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function StartGame({toggle}) {
+ const StartGame = ({toggle}) =>  {
   return (
     <Container>
-        <div>
-        <img src='/Images/dices.png' />
-        </div>
-        <div className='content'>
-            <h1>DICE GAME</h1>
-            <Button
-            onClick={toggle}
-            >Play Now</Button>
-        </div>
-    </Container>
-  )
-}
+    <div>
+      <img src='/Images/dices.png' alt='Dices' />
+    </div>
+    <div className='content'>
+      <h1>DICE GAME</h1>
+      <Button onClick={toggle}>Play Now</Button>
+    </div>
+  </Container>
+  );
+};
+export default StartGame;
 
-export default StartGame
 
 const Container = styled.div`
 max-width:1180px;
@@ -41,7 +39,7 @@ justify-content: center;
 padding: 10px 30px;
 min-width: 220px;
 border: none;
-pointer-events: cursor;
+cursor: pointer;
 border-radius: 5px;
 font-size: 16px;
 transition: 0.3s ease;
