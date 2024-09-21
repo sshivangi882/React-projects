@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import styled from 'styled-components';
+import { Button } from '../styled/Button';
 
  const StartGame = ({toggle}) =>  {
   return (
@@ -32,23 +34,3 @@ align-items: center;
 }
 `;
 
-const Button = styled.button`
-background-color: black;
-color: white;
-justify-content: center;
-padding: 10px 30px;
-min-width: 220px;
-border: none;
-cursor: pointer;
-border-radius: 5px;
-font-size: 16px;
-transition: 0.3s ease;
-
-
-&:hover{
-    background-color: #383838;
-    color: white;
-    transition: 0.4s ease;
-}
-`
-;
