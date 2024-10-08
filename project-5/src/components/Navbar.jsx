@@ -1,10 +1,9 @@
 
 const Navbar = () => {
   return (
-    <div className="h-[60px] bg-white m-4 rounded-lg">
-      <div className="flex">
-        
-      </div>
+    <div className="h-[60px] gap-2 bg-white my-4 rounded-lg flex items-center justify-center text-xl  font-medium">
+        <img src="/firebase.svg" />
+        <h1>Firebase Contact App</h1>
     </div>
   )
 }
