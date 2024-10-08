@@ -30,7 +30,7 @@ export default SearchResult;
 
 const FoodCardContainer = styled.section`
   background-image:  url("/bg.png")   ;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/bg.png");
+  background-image: linear-gradient(rgba(24, 24, 24, 0.5), rgba(92, 92, 92, 0.5)), url("/bg.png");
   background-size: cover;
   min-height:100vh;
 `;
