@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./config/firebase";
 import ContactCard from "./components/ContactCard";
-import Modal from "./components/Modal";
+
+import AddAndUpdateContact from "./components/AddAndUpdateContact";
 
 
 
@@ -53,7 +54,7 @@ function App() {
           />
         </div>
         <div>
-          <AiFillPlusCircle className="cursor-pointer gap-4 text-4xl text-white" onClick={isOpen} />
+          <AiFillPlusCircle className="cursor-pointer gap-4 text-4xl text-white" onClick={onOpen} />
         </div>
       </div>
 
@@ -64,9 +65,7 @@ function App() {
         ))}
       </div>
     </div>
-        <Modal isOpen={isOpen} onClose={onClose}>
-          Hi
-        </Modal>
+       <AddAndUpdateContact isOpen={isOpen} onClose={onClose} />
     </>
   );
 }
